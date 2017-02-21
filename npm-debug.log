@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/da/.nvm/versions/node/v5.11.1/bin/node',
+1 verbose cli   '/Users/da/.nvm/versions/node/v5.11.1/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'phantomjs' ]
+2 info using npm@4.1.2
+3 info using node@v5.11.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData phantomjs
+8 silly fetchNamedPackageData phantomjs
+9 silly mapToRegistry name phantomjs
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://npm.nsm.com:4042/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'phantomjs',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'phantomjs',
+12 silly mapToRegistry   name: 'phantomjs',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://npm.nsm.com:4042/phantomjs
+14 verbose request uri http://npm.nsm.com:4042/phantomjs
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:42:26 AM
+17 verbose request using bearer token for auth
+18 verbose request id 4a51621c26d8e340
+19 http request GET http://npm.nsm.com:4042/phantomjs
+20 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 104.214.65.130:4042
+21 info attempt registry request try #2 at 11:42:37 AM
+22 verbose request using bearer token for auth
+23 http request GET http://npm.nsm.com:4042/phantomjs
+24 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 104.214.65.130:4042
+25 info attempt registry request try #3 at 11:43:37 AM
+26 verbose request using bearer token for auth
+27 http request GET http://npm.nsm.com:4042/phantomjs
+28 silly fetchPackageMetaData Error: connect ECONNREFUSED 104.214.65.130:4042
+28 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:893:11)
+28 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:916:20)
+28 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1075:14)
+28 silly fetchPackageMetaData  error for phantomjs { [Error: connect ECONNREFUSED 104.214.65.130:4042]
+28 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+28 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+28 silly fetchPackageMetaData   syscall: 'connect',
+28 silly fetchPackageMetaData   address: '104.214.65.130',
+28 silly fetchPackageMetaData   port: 4042 }
+29 silly rollbackFailedOptional Starting
+30 verbose stack TypeError: Cannot read property 'path' of null
+30 verbose stack     at Object.Installer.rollbackFailedOptional (/Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/lib/install.js:511:29)
+30 verbose stack     at Array.<anonymous> (/Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+30 verbose stack     at LOOP (/Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+30 verbose stack     at /Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+30 verbose stack     at /Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/lib/install.js:337:5
+30 verbose stack     at Array.<anonymous> (/Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+30 verbose stack     at LOOP (/Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+30 verbose stack     at chain (/Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+30 verbose stack     at /Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/lib/install.js:294:5
+30 verbose stack     at /Users/da/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:16:22
+31 verbose cwd /Users/da/Projects/marketing_portal/Marketing.Portal.TestAutomation
+32 error Darwin 15.4.0
+33 error argv "/Users/da/.nvm/versions/node/v5.11.1/bin/node" "/Users/da/.nvm/versions/node/v5.11.1/bin/npm" "install" "-g" "phantomjs"
+34 error node v5.11.1
+35 error npm  v4.1.2
+36 error Cannot read property 'path' of null
+37 error If you need help, you may report this error at:
+37 error     <https://github.com/npm/npm/issues>
+38 verbose exit [ 1, true ]

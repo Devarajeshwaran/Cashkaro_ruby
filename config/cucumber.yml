@@ -1,0 +1,26 @@
+## config/cucumber.yml
+## YAML Template
+
+#default: --format html --out reports/index.html --format pretty --profile smoke DRIVER=<%= ENV['DRIVER']%>
+
+default: --format html --out reports/QAExecutionReport.html --format pretty --profile smoke DRIVER=<%= ENV['DRIVER']%>
+
+
+smoke: --tags <%= ENV['FEATURE_TAGS'] || '@smoke' %>
+
+#all: --format html --out reports/index.html --format pretty DRIVER=<%= ENV['DRIVER'] %> --tags ~@wip
+all: --format html --out reports/AllExecutionReport.html --format pretty DRIVER=<%= ENV['DRIVER'] %> --tags ~@wip
+
+#dev: --format html --out reports/index.html --format pretty DRIVER=<%= ENV['DRIVER'] %> --tags @dev
+#dev: --format html --out reports/DevExecutionReport.html --format pretty DRIVER=<%= ENV['DRIVER'] %> --tags @dev
+
+
+########################################################################################################################
+#  Environment details
+#  Use the below example in order to run the suite across environments
+#       example(to run on Development env): "bundle exec cucumber features TEST_ENV=qa"
+########################################################################################################################
+
+#Testing Environment
+qa:
+ :url: http://cashkaro.iamsavings.co.uk/index.php
